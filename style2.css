@@ -1,0 +1,402 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    background: rgba(176, 247, 227, 0.534);
+    height: 100px;
+    
+    
+}
+.cover_photo{
+    background: url(./pic/cover2.png);
+    background-size: cover;
+    height: 800px;
+}
+header img{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+
+}
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(20, 17, 22);
+    font-size: 30px;
+
+}
+.three{
+    display: flex;
+}
+li{
+    margin: 20px;
+}
+li>a{
+    font-size: 20px;
+    font-weight: mediun;
+    
+}
+.fast{
+    position: relative;
+}
+.second{
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    background: rgb(209, 219, 221);
+    display: none;
+}
+.fast:hover .second{
+    display: block;
+}
+li:hover a{
+    color:yellowgreen;
+}
+h1{
+    color: black;
+    font-size: 100PX;
+    font-family: Roboto;
+    font-style: italic;
+}
+button{
+    font-size: 50px;
+    background-color: yellowgreen;
+    margin-left: 150px;
+    border-radius: 10px;
+    border: darkgrey;
+    padding: 10px;
+    font-family: Roboto;
+    font-style: italic;
+
+}
+.fa-envelope-o{
+    font-size: 35px;
+    color: blue;
+
+    
+}
+.fa-bars {
+    font-size:35px ;
+    color: blue;
+    margin-left:10px ;
+    display: none;
+}
+.top_bar{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: white;
+    
+}
+.social_info{
+    display: flex;
+    gap: 15px;
+}
+.content_info{
+    display: flex;
+    gap: 15px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    top: 0%;
+    background-color: rgba(136, 197, 180, 0.534);
+    
+}
+.icon .all_icon{
+    height: 180px;
+    width: 250px;
+    background-color: rgba(176, 247, 227, 0.534);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    border: 2px solid chocolate;
+    gap: 20px;
+    box-shadow:0 0px 10px 4px rgba(33, 22, 22, 0.504);
+margin-bottom: 20px;
+
+    
+}
+.icon .all_icon i{
+    font-size: 50px;
+}
+.icon .all_icon h1{
+    font-size: 30px;
+}
+.all_icon:hover{
+    background-color: rgba(50, 186, 204, 0.955);
+    color: black;
+}
+.where{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #5454ed;
+}
+.where i{
+font-size: 30px;
+margin: 20px;
+}
+.where h1{
+    font-size: 35px;
+}
+.what{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: rgba(136, 197, 180, 0.534);
+
+
+}
+.what-fast{
+    
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(136, 197, 180, 0.534);
+}
+.what-fast p{
+    font-size: 30px;
+    text-align: center;
+}
+.img{
+    width: 200px;
+    height: 150px;
+    
+}
+.your-class div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.your-class div img{
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color:yellowgreen;
+    font-size: 2.5rem;
+}
+
+
+.slick-prev,
+.slick-next {
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 2;
+    
+}
+
+.slick-list {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.slick-prev {
+    left: 10%;
+}
+
+.slick-next {
+    right: 20%;
+}
+.slider{
+    background-image: url(./tea2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.304);
+}
+.slider h1{
+    
+    text-align: center;
+    margin: 15px;
+
+}
+
+
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: rgb(92, 134, 9);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.mega-menu{
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    top: 100px;
+    margin: o auto;
+    display: none;
+    padding: 20px;
+    gap: 40px;
+    background: rgba(136, 197, 180, 0.534);
+}
+.mega-menu .container h3{
+    border-bottom: 2px solid black;
+
+}
+.ten:hover .mega-menu{
+    display: flex;
+}
+.mobli-menu{
+    display: none;
+    background: white;
+    height: 300px;
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+.latest_works {
+    height: 100%;
+}
+
+.titlearea {
+    padding: 20px 0;
+}
+
+.title {
+    font-size: 20px;
+    color: #01003f;
+}
+
+.title2 {
+    font-size: 60px;
+    color: aqua;
+}
+
+.titlearea h3,
+h2 {
+    text-align: center;
+
+}
+
+.portfilo_area {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Projects_img {
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.Projects_img img {
+    width: 100%;
+}
+
+.Projects_img img:hover {
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-70%);
+    }
+}
+
+ @media only screen and (max-width:600px) {
+    .three {
+        display: none;
+    }
+    h1 {
+        color: black;
+        font-size: 40PX;
+        font-family: Roboto;
+        font-style: italic;
+    }
+    button {
+        font-size: 30px;
+        background-color: yellowgreen;
+        margin-left: 100px;
+        border-radius: 5px;
+        border: darkgrey;
+        padding: 5px;
+        font-family: Roboto;
+        font-style: italic;
+    }
+    .cover_photo {
+        background: url(./cover2.png);
+        background-size: cover;
+        height: 600px;
+    }
+    .fa-bars{
+        display: inline;
+    }
+    .what {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+        background-color: rgba(136, 197, 180, 0.534);
+    }
+    .fa-bars:hover .mobli-menu {
+        display: block;
+        background: white;
+        height: 300px;
+        width: 150px;
+ }
+ .dowe{
+    display: none;
+ }
+ .m_service:hover .dowe{
+    display: block;
+ }
+ .moble-list{
+    font-size: 20px;
+
+ }
+}
+    
+ 
